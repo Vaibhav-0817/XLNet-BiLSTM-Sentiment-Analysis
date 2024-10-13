@@ -13,7 +13,7 @@ from src.preprocess import preprocess_text
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 tokenizer = XLNetTokenizer.from_pretrained("xlnet-base-cased")
 
-# ----------------------------- IMDb Data ---------------------------------
+# IMDb Data 
 print("Loading IMDb dataset...")
 imdb_dataset = load_dataset("imdb")
 imdb_dataset["train"] = [{"text": preprocess_text(example["text"]), "label": example["label"]} for example in imdb_dataset["train"]]
@@ -40,7 +40,7 @@ imdb_report, imdb_accuracy = evaluate(model, test_loader, device)
 print("IMDb Classification Report:\n", imdb_report)
 print(f"IMDb Accuracy: {imdb_accuracy:.4f}")
 
-# ----------------------- Delhi Metro Data ---------------------------------
+# Delhi Metro Data 
 print("Loading Delhi Metro dataset...")
 delhi_metro_data = pd.read_csv('data/delhi_metro.csv')
 delhi_metro_data['Sentiment'] = delhi_metro_data['Sentiment'].map({'positive': 1, 'negative': 0, 'positiv': 1})
