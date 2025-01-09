@@ -51,5 +51,16 @@ The project generates plots for training loss, test accuracy, and confusion matr
 ## Results
 The model provides classification reports and visualizes performance through confusion matrices for both datasets, enabling easy evaluation of model accuracy. The implementation demonstrates high accuracy in sentiment classification, making it effective for real-world applications.
 
+## **Research Paper**
+
+This project is based on our research paper:
+
+**[Sentiment Analysis for Citizen Feedback in Smart Cities with XLNet-BiLSTM: Delhi Metro as a Case Study](https://cse.mait.ac.in/index.php/cse/conference-symposium/international-symposium/105-latest-news/1092-scctt-2024)**  
+Published in: *[SCCTT 2024]*  
+
+The paper details the methodology, experiments, and findings, showcasing how the XLNet-BiLSTM model achieves high accuracy for sentiment classification.  
+[Read the Full Paper](https://ceur-ws.org/Vol-3868/Paper5.pdf)
+
+
 ## License
 This project is licensed under the MIT License.
